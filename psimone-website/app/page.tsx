@@ -9,7 +9,7 @@ export default function Home() {
       <nav className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-slate-100">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center max-w-4xl">
           <Link href="/" className="text-lg font-semibold text-slate-900 tracking-tight">
-            Dott. Recano
+            Dott. Simone Recano
           </Link>
           <div className="flex gap-6 text-sm font-medium text-slate-600">
             <a href="#chi-sono" className="hover:text-slate-900 transition-colors">Chi sono</a>
