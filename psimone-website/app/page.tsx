@@ -63,59 +63,44 @@ export default function Home() {
         <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2 text-center">Contattami</h2>
         <p className="text-center text-slate-500 mb-12">Sono disponibile per appuntamenti in studio e online.</p>
         
-        <div className="grid gap-6 md:grid-cols-2 max-w-3xl mx-auto">
+        <div className="flex items-center justify-center gap-6">
           
-          {/* Email Card */}
+          {/* Email */}
           <a 
             href="mailto:psimonrecano@outlook.com"
-            className="flex flex-col items-center p-8 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all hover:border-slate-200 group"
+            aria-label="Invia email"
+            className="w-14 h-14 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center hover:bg-blue-50 hover:text-blue-600 transition-all hover:scale-110"
           >
-            <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <Mail className="w-6 h-6" />
-            </div>
-            <h3 className="font-semibold text-slate-900 mb-1">Email</h3>
-            <p className="text-slate-500 text-sm mb-4">Scrivimi per informazioni</p>
-            <span className="text-blue-600 font-medium text-sm group-hover:underline">psimonrecano@outlook.com</span>
+            <Mail className="w-6 h-6" />
           </a>
 
-          {/* WhatsApp Card */}
+          {/* WhatsApp */}
           <a 
             href="https://wa.me/393501724056"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center p-8 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all hover:border-green-100 group"
+            aria-label="Chatta su WhatsApp"
+            className="w-14 h-14 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center hover:bg-green-50 hover:text-green-600 transition-all hover:scale-110"
           >
-            <div className="w-12 h-12 bg-green-50 text-green-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <MessageCircle className="w-6 h-6" />
-            </div>
-            <h3 className="font-semibold text-slate-900 mb-1">WhatsApp</h3>
-            <p className="text-slate-500 text-sm mb-4">Chatta direttamente con me</p>
-            <span className="text-green-600 font-medium text-sm group-hover:underline">Avvia chat</span>
+            <MessageCircle className="w-6 h-6" />
           </a>
 
-          {/* Phone Card */}
+          {/* Phone */}
           <a 
             href="tel:+393501724056"
-            className="flex flex-col items-center p-8 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all hover:border-slate-200 group"
+            aria-label="Chiama"
+            className="w-14 h-14 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center hover:bg-slate-200 hover:text-slate-900 transition-all hover:scale-110"
           >
-            <div className="w-12 h-12 bg-slate-50 text-slate-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <Phone className="w-6 h-6" />
-            </div>
-            <h3 className="font-semibold text-slate-900 mb-1">Telefono</h3>
-            <p className="text-slate-500 text-sm mb-4">Chiamami per appuntamento</p>
-            <span className="text-slate-900 font-medium text-sm group-hover:underline">+39 350 172 4056</span>
+            <Phone className="w-6 h-6" />
           </a>
 
-          {/* Appointment Card (Coming Soon) */}
-          <div className="flex flex-col items-center p-8 bg-slate-50 rounded-2xl border border-slate-200 shadow-inner opacity-80 cursor-not-allowed grayscale-[0.5]">
-            <div className="w-12 h-12 bg-slate-200 text-slate-500 rounded-full flex items-center justify-center mb-4">
-              <Calendar className="w-6 h-6" />
-            </div>
-            <h3 className="font-semibold text-slate-700 mb-1">Prenota Online</h3>
-            <p className="text-slate-500 text-sm mb-4">Calendario appuntamenti</p>
-            <span className="bg-slate-200 text-slate-600 text-xs font-semibold px-3 py-1 rounded-full items-center gap-1 inline-flex">
-              Presto disponibile
-            </span>
+          {/* Appointment (Coming Soon) */}
+          <div 
+            aria-label="Prenota appuntamento - Presto disponibile"
+            className="relative w-14 h-14 rounded-full bg-slate-100 text-slate-300 flex items-center justify-center cursor-not-allowed"
+          >
+            <Calendar className="w-6 h-6" />
+            <span className="absolute -bottom-7 text-[10px] text-slate-400 font-medium whitespace-nowrap">Coming soon</span>
           </div>
 
         </div>
