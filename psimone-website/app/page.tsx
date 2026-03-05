@@ -11,11 +11,11 @@ function WhatsAppIcon({ className }: { className?: string }) {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-white">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-[#0a1628]">
 
       <div className="flex flex-col items-center text-center px-6 max-w-2xl">
         {/* Logo / Name */}
-        <div className="mb-8 relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden bg-slate-100 ring-4 ring-slate-50">
+        <div className="mb-8 relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden bg-slate-700 ring-4 ring-slate-700/50">
           <Image
             src="/foto.jpg"
             alt="Dott. Simone Recano"
@@ -26,12 +26,12 @@ export default function Home() {
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight mb-6 leading-tight">
+        <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-6 leading-tight">
           Dott. Simone Recano
         </h1>
 
         {/* Coming Soon Badge */}
-        <div className="inline-flex items-center gap-2 bg-slate-900 text-white text-sm font-medium px-5 py-2 rounded-full mb-6 shadow-md">
+        <div className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-medium px-5 py-2 rounded-full mb-6 shadow-md border border-white/10">
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-green-400"></span>
@@ -40,7 +40,7 @@ export default function Home() {
         </div>
 
         {/* Description */}
-        <p className="text-lg text-slate-600 max-w-lg mb-10 leading-relaxed">
+        <p className="text-lg text-slate-400 max-w-lg mb-10 leading-relaxed">
           Sto lavorando al mio nuovo sito web.<br />
           Nel frattempo, puoi contattarmi qui sotto.
         </p>
@@ -53,10 +53,10 @@ export default function Home() {
             aria-label="Invia email"
             className="flex flex-col items-center gap-2 group"
           >
-            <div className="w-14 h-14 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center group-hover:bg-blue-50 group-hover:text-blue-600 transition-all group-hover:scale-110">
+            <div className="w-14 h-14 rounded-full bg-white/10 text-slate-300 flex items-center justify-center group-hover:bg-blue-500/20 group-hover:text-blue-400 transition-all group-hover:scale-110">
               <Mail className="w-6 h-6" />
             </div>
-            <span className="text-xs text-slate-500 font-medium group-hover:text-blue-600 transition-colors">Email</span>
+            <span className="text-xs text-slate-400 font-medium group-hover:text-blue-400 transition-colors">Email</span>
           </a>
 
           {/* WhatsApp */}
@@ -67,10 +67,10 @@ export default function Home() {
             aria-label="Chatta su WhatsApp"
             className="flex flex-col items-center gap-2 group"
           >
-            <div className="w-14 h-14 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center group-hover:bg-green-50 group-hover:text-green-600 transition-all group-hover:scale-110">
+            <div className="w-14 h-14 rounded-full bg-white/10 text-slate-300 flex items-center justify-center group-hover:bg-green-500/20 group-hover:text-green-400 transition-all group-hover:scale-110">
               <WhatsAppIcon className="w-6 h-6" />
             </div>
-            <span className="text-xs text-slate-500 font-medium group-hover:text-green-600 transition-colors">WhatsApp</span>
+            <span className="text-xs text-slate-400 font-medium group-hover:text-green-400 transition-colors">WhatsApp</span>
           </a>
 
           {/* Phone */}
@@ -79,16 +79,16 @@ export default function Home() {
             aria-label="Chiama"
             className="flex flex-col items-center gap-2 group"
           >
-            <div className="w-14 h-14 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center group-hover:bg-slate-200 group-hover:text-slate-900 transition-all group-hover:scale-110">
+            <div className="w-14 h-14 rounded-full bg-white/10 text-slate-300 flex items-center justify-center group-hover:bg-white/20 group-hover:text-white transition-all group-hover:scale-110">
               <Phone className="w-6 h-6" />
             </div>
-            <span className="text-xs text-slate-500 font-medium group-hover:text-slate-900 transition-colors">Telefono</span>
+            <span className="text-xs text-slate-400 font-medium group-hover:text-white transition-colors">Telefono</span>
           </a>
         </div>
       </div>
 
       {/* Footer */}
-      <footer className="absolute bottom-6 text-center text-xs text-slate-300">
+      <footer className="absolute bottom-6 text-center text-xs text-slate-600">
         &copy; {new Date().getFullYear()} Dott. Simone Recano &mdash; Tutti i diritti riservati
       </footer>
     </main>
