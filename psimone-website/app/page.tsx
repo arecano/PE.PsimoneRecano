@@ -88,7 +88,7 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <footer className="absolute bottom-6 text-center text-xs text-slate-600">
+      <footer className="mt-16 pb-6 text-center text-xs text-slate-600">
         &copy; {new Date().getFullYear()} Dott. Simone Recano &mdash; Tutti i diritti riservati
       </footer>
     </main>
